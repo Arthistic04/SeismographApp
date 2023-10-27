@@ -1,0 +1,11 @@
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\obj\Debug\SeismographApp.csproj.AssemblyReference.cache
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\obj\Debug\SeismographApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\obj\Debug\SeismographApp.MainForm.resources
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\obj\Debug\SeismographApp.Properties.Resources.resources
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\obj\Debug\SeismographApp.csproj.GenerateResource.cache
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\obj\Debug\SeismographApp.csproj.CoreCompileInputs.cache
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\bin\Debug\SeismographApp.exe.config
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\bin\Debug\SeismographApp.exe
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\bin\Debug\SeismographApp.pdb
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\obj\Debug\SeismographApp.exe
+C:\Users\Arthur\source\repos\SeismographApp\SeismographApp\obj\Debug\SeismographApp.pdb
