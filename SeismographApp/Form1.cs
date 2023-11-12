@@ -19,8 +19,8 @@ namespace SeismographApp
             // Set up chart properties
             //chart1.ChartAreas[0].AxisX.Minimum = 0;
             //chart1.ChartAreas[0].AxisX.Maximum = 500; // Adjust as needed
-            chart1.ChartAreas[0].AxisY.Minimum = -20;
-            chart1.ChartAreas[0].AxisY.Maximum = 20; // Adjust as needed
+            chart1.ChartAreas[0].AxisY.Minimum = -5;
+            chart1.ChartAreas[0].AxisY.Maximum = 5; // Adjust as needed
 
             chart1.ChartAreas[0].AxisX.IsStartedFromZero = false;
             chart1.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss"; // Optional: Format the X-axis label as desired
@@ -54,7 +54,7 @@ namespace SeismographApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error: Cannot Find Sensor \n" + ex.Message);
             }
         }
 
@@ -94,26 +94,26 @@ namespace SeismographApp
                         }
 
                         double accelerationMagnitude = CalculateEquation(x1, y1, z1);
-                        labelResult1.Text = $"Result: {accelerationMagnitude}";
+                        labelResult1.Text = $"{accelerationMagnitude}";
 
                     });
                 }
             }
         }
 
-        private double CalculateEquation(float x, float y, float z)
+        private double CalculateEquation(float x1, float y1, float z1)
         {
-            double accelerationMagnitude = Math.Sqrt(x * x + y * y + z * z);
+            double accelerationMagnitude = Math.Sqrt(x1 * x1 + y1 * y1 + z1 * z1);
             if (accelerationMagnitude > 10.0)
             {
-                labelResult1.Text = $"Result: {accelerationMagnitude}";
-                labelResult2.Text = "Earthquake\nDetected";
+                labelResult1.Text = $"{accelerationMagnitude}";
+                labelResult2.Text = "                                   Earthquake Detected                                       ";
                 labelResult3.Text = "";
             }
             else
             {
                 labelResult2.Text = "";
-                labelResult3.Text = "                 \n        ";
+                labelResult3.Text = "";
             }
             return accelerationMagnitude;
         }
